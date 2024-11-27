@@ -121,6 +121,8 @@ fierce --domain <HOST>
 
 ## Ping scan
 sudo nmap -sn <TARGET_IP/NETWORK>
+## Get only IP's of network
+nmap -n -sn <TARGET_IP/NETWORK> -oG - | awk '/Up$/{print $2}'
 ## ARP scan
 netdiscover -i eth1 -r <TARGET_IP/NETWORK>
 
@@ -158,8 +160,6 @@ nmap -Pn -F -oX outputfile.xml <TARGET_IP>
 nmap -Pn -sV -sC -O -oA outputfile <TARGET_IP>
 nmap -Pn -sV -sC -O -oA outputfile <TARGET_IP>
 nmap -A -oA outputfile <TARGET_IP>
-## Get only IP's of network
-nmap -n -sn <TARGET_IP>/<SUBNET> -oG - | awk '/Up$/{print $2}'
 ```
 
 ## Footprinting & Scanning
