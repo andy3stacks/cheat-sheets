@@ -59,11 +59,10 @@ powershell.exe -Version 2
 ---
 
 ## Abbreviations
-| Parameter                    | Abbreviated Example         | Example Command                   |
-|------------------------------|-----------------------------|------------------------------------|
-| `-ExecutionPolicy Bypass`    | `-ep Bypass`               | `powershell.exe -ep Bypass`       |
-| `-EncodedCommand`            | `-enco`                    | `powershell.exe -enco <command>`  |
-| `-WindowStyle Hidden`        | `-W h`                     | `powershell.exe -W h`             |
+| **-ExecutionPolicy Bypass** | **-EncodedCommand**    | **-WindowStyle Hidden** |
+| --------------------------- | ---------------------- | ----------------------- |
+| `powershell.exe -ep Bypass` | `powershell.exe -enco` | `powershell.exe -W h`   |
+| `powershell.exe -ex by`     | `powershell.exe -ec`   | `powershell.exe -Wi hi` |
 
 ---
 
