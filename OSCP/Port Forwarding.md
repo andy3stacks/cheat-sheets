@@ -32,7 +32,7 @@ ssh -N -L 0.0.0.0:<LOCAL_PORT>:<DEST_IP>:<DEST_PORT> <MIDDLE_USER>@<MIDDLE_IP>
 - DEST IP/PORT: `172.16.50.217:445`
 #### Remote Listener
 ```
-example@example01:/home/example$ ssh -N -L 0.0.0.0:4455:172.16.50.217:445 admin@10.4.50.215
+example@example01:/home/example$ ssh -N -L 0.0.0.0:4455:172.16.50.217:445 admin@10.2.50.215
 ```
 #### Attacker Connect
 ```
