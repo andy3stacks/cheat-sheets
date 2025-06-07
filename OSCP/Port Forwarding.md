@@ -1,7 +1,7 @@
 # Port Forwarding
 ## Socat
 ### Command
-```bash
+```
 socat -ddd TCP-LISTEN:<LISTENING_PORT>,fork TCP:<DESTINATION_IP>:<DESTINATION_PORT>
 ```
 ### Example
